@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+dist/
+node_modules/
+.trimscript/
+*.trimscript.json
+# media and models never go in git
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.m4a
+*.bin
+spikes/*/data/
+spikes/*/out/
+.DS_Store
