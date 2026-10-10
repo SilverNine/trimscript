@@ -1,0 +1,28 @@
+name: Bug report
+description: Something did not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: A short clip that shows it helps a lot (or say where to find one).
+  - type: input
+    id: version
+    attributes:
+      label: Version and system
+      placeholder: "trimscript --version, macOS 15 on M1 / Ubuntu 24.04 / Windows 11, ffmpeg -version"
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Terminal output
+      render: text

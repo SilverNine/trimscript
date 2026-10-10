@@ -9,6 +9,7 @@ node_modules/
 *.wav
 *.mp3
 *.mp4
+!docs/demo.mp4
 *.mov
 *.m4a
 *.bin

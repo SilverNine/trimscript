@@ -70,7 +70,7 @@ def show(proj: Project, words: bool) -> str:
     head = f"# {proj.source}  {fmt_time(proj.duration)} -> {fmt_time(proj.kept_duration())}"
     sugg = [c for c in proj.cuts if c.status == "suggested"]
     if sugg:
-        head += f"  ({len(sugg)} suggestions pending; {fmt_time(proj.kept_duration(with_suggestions=True))} if all accepted)"
+        head += f"  ({len(sugg)} suggestion{'s' if len(sugg) != 1 else ''} pending; {fmt_time(proj.kept_duration(with_suggestions=True))} if all accepted)"
     return "\n".join([head, *lines])
 
 

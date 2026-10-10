@@ -9,6 +9,8 @@ Runs on your machine. Free and open source. AI edits arrive as suggestions you a
 
 <sub>Delete the restarted intro, Trim fillers, Tab through the edits to listen, Tighten pauses: 48.1 s down to 27.6 s. The demo talk is synthetic: script and slides written for this demo, voice generated with [Dia](https://github.com/nari-labs/dia).</sub>
 
+▶ [Watch the 50-second demo](docs/demo.mp4): the same edit, then Claude Code suggesting cuts through the MCP server.
+
 ```sh
 uvx --from git+https://github.com/SilverNine/trimscript trimscript open my-video.mp4
 ```
