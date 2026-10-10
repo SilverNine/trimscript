@@ -1,15 +1,17 @@
 # TrimScript
 
+<!-- mcp-name: io.github.SilverNine/trimscript -->
+
 [![ci](https://github.com/SilverNine/trimscript/actions/workflows/ci.yml/badge.svg)](https://github.com/SilverNine/trimscript/actions/workflows/ci.yml)
 
 **Edit video by editing the transcript.**
 Runs on your machine. Free and open source. AI edits arrive as suggestions you approve.
 
-![Removing a restarted intro, trimming fillers, listening through the edits, then tightening pauses](docs/demo.gif)
+![Removing a restarted intro, trimming fillers, listening through the edits, then tightening pauses](https://raw.githubusercontent.com/SilverNine/trimscript/main/docs/demo.gif)
 
 <sub>Delete the restarted intro, Trim fillers, Tab through the edits to listen, Tighten pauses: 48.1 s down to 27.6 s. The demo talk is synthetic: script and slides written for this demo, voice generated with [Dia](https://github.com/nari-labs/dia).</sub>
 
-▶ [Watch the 50-second demo](docs/demo.mp4): the same edit, then Claude Code suggesting cuts through the MCP server.
+▶ [Watch the 50-second demo](https://github.com/SilverNine/trimscript/blob/main/docs/demo.mp4): the same edit, then Claude Code suggesting cuts through the MCP server.
 
 ```sh
 uvx --from git+https://github.com/SilverNine/trimscript trimscript open my-video.mp4
@@ -95,7 +97,7 @@ Three single-speaker talks from 38C3. For each: transcribe, trim fillers, tighte
 
 - 582 fillers trimmed across the three talks; 51 could still be heard after export. Filler counts are what the recognizer heard, not a judgment of any speaker.
 - 3.0 to 4.5% of kept words read differently in the second transcript. Most of them sit away from any edit point: two different recognizers hearing jargon differently, not edits clipping words.
-- Measured on an M1 Pro. Method and raw numbers: [spikes/e2e-real](spikes/e2e-real/RESULTS.md).
+- Measured on an M1 Pro. Method and raw numbers: [spikes/e2e-real](https://github.com/SilverNine/trimscript/blob/main/spikes/e2e-real/RESULTS.md).
 
 Talks: "Building Your First LoRa Mesh Network From Scratch" by WillCrash, "ACE up the sleeve: Hacking into Apple's new USB-C Controller" by stacksmashing, and "Going Long! Sending weird signals over long haul optical networks" by Ben Cartwright-Cox. Recorded by the [C3VOC](https://c3voc.de) at 38C3 and published on media.ccc.de under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The recordings are not part of this repository and were not modified; only measurements are reported. The speakers have not reviewed or endorsed TrimScript.
 
@@ -111,7 +113,7 @@ It has no multitrack timeline, screen recorder, voice cloning or collaboration. 
 - Optional: [Parakeet TDT 0.6B v2](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2) by NVIDIA, CC BY 4.0, in the [MLX conversion](https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v2) by mlx-community, run through [parakeet-mlx](https://github.com/senstella/parakeet-mlx), Apache 2.0 (`trimscript[parakeet]`, `--engine parakeet`)
 - [noisereduce](https://github.com/timsainb/noisereduce), MIT
 - [FFmpeg](https://ffmpeg.org), called as a separate program and not distributed with TrimScript
-- Editor UI: [React](https://react.dev), [shadcn/ui](https://ui.shadcn.com) components on [Radix UI](https://www.radix-ui.com), [Tailwind CSS](https://tailwindcss.com), [Sonner](https://sonner.emilkowal.ski), clsx and tailwind-merge (MIT), [class-variance-authority](https://github.com/joe-bell/cva) (Apache 2.0), [Lucide](https://lucide.dev) icons (ISC, some derived from Feather, MIT). Full license texts ship with the package in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `src/trimscript/static/THIRD_PARTY_LICENSES.txt`.
+- Editor UI: [React](https://react.dev), [shadcn/ui](https://ui.shadcn.com) components on [Radix UI](https://www.radix-ui.com), [Tailwind CSS](https://tailwindcss.com), [Sonner](https://sonner.emilkowal.ski), clsx and tailwind-merge (MIT), [class-variance-authority](https://github.com/joe-bell/cva) (Apache 2.0), [Lucide](https://lucide.dev) icons (ISC, some derived from Feather, MIT). Full license texts ship with the package in [THIRD_PARTY_NOTICES.md](https://github.com/SilverNine/trimscript/blob/main/THIRD_PARTY_NOTICES.md) and `src/trimscript/static/THIRD_PARTY_LICENSES.txt`.
 - Demo voice: [Dia](https://github.com/nari-labs/dia) by Nari Labs, Apache 2.0
 
 ## Trademarks
@@ -120,4 +122,4 @@ Final Cut Pro is a trademark of Apple Inc. DaVinci Resolve is a trademark of Bla
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/SilverNine/trimscript/blob/main/LICENSE).

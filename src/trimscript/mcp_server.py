@@ -13,7 +13,7 @@ from pathlib import Path
 from mcp.server.mcpserver import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
 
-from trimscript import render
+from trimscript import __version__, render
 from trimscript.cli import ensure_project, resolve, show
 from trimscript.project import Project, editing
 
@@ -26,7 +26,7 @@ Suggest removals that include words. Fillers, pauses and stray sounds are not yo
 the person handles them with one button each in the editor.
 In get_transcript output, ~~x~~ is already removed and [-x-] is a pending suggestion."""
 
-mcp = MCPServer(name="trimscript", instructions=INSTRUCTIONS)
+mcp = MCPServer(name="trimscript", version=__version__, website_url="https://github.com/SilverNine/trimscript", instructions=INSTRUCTIONS)
 
 
 def _project(media: str) -> tuple[Path, Path]:
