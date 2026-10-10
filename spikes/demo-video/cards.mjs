@@ -40,7 +40,7 @@ await page.screenshot({ path: `${out}/title.png` });
 await page.setContent(card(`
   <div style="font:700 96px/1 ${font};letter-spacing:-.04em">TrimScript</div>
   <div style="font:500 38px/1.2 ${font};color:#cfcfca">Local · Free · MIT · works with your coding agent</div>
-  <div style="margin-top:18px;font:500 27px/1 ${mono};background:#1f1f1f;border:1px solid #333;border-radius:12px;padding:22px 28px;color:#e8e8e3">uvx --from git+https://github.com/SilverNine/trimscript trimscript open my-video.mp4</div>
+  <div style="margin-top:18px;font:500 27px/1 ${mono};background:#1f1f1f;border:1px solid #333;border-radius:12px;padding:22px 28px;color:#e8e8e3">uvx trimscript open my-video.mp4</div>
   <div style="font:500 30px/1 ${font};color:#9a9a94">github.com/SilverNine/trimscript</div>`));
 await page.screenshot({ path: `${out}/end.png` });
 await browser.close();

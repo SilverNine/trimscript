@@ -14,7 +14,7 @@ Runs on your machine. Free and open source. AI edits arrive as suggestions you a
 ▶ [Watch the 50-second demo](https://github.com/SilverNine/trimscript/blob/main/docs/demo.mp4): the same edit, then Claude Code suggesting cuts through the MCP server.
 
 ```sh
-uvx --from git+https://github.com/SilverNine/trimscript trimscript open my-video.mp4
+uvx trimscript open my-video.mp4
 ```
 
 Needs [uv](https://docs.astral.sh/uv/) and ffmpeg (`brew install ffmpeg`, `apt install ffmpeg`, `winget install ffmpeg`). Transcription, editing and export run on your machine: no account, no upload. If you connect a coding agent, that agent (and the model service behind it) reads the transcript.
@@ -38,7 +38,7 @@ Needs [uv](https://docs.astral.sh/uv/) and ffmpeg (`brew install ffmpeg`, `apt i
 TrimScript ships an MCP server, so Claude Code, Codex or any MCP client can read the transcript and propose edits. Agent edits never apply silently: they show up in the open editor as suggestions with a reason, and you decide.
 
 ```sh
-claude mcp add trimscript -- uvx --from git+https://github.com/SilverNine/trimscript trimscript mcp
+claude mcp add trimscript -- uvx trimscript mcp
 ```
 
 Then ask things like:
